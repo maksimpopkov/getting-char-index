@@ -52,7 +52,7 @@ namespace GettingCharIndex
 
             if (startIndex > str.Length)
             {
-                throw new ArgumentOutOfRangeException(nameof(startIndex), "startIndex is greater or equals str.Length");
+                throw new ArgumentOutOfRangeException(nameof(startIndex), "startIndex is greater than str.Length");
             }
 
             if (count < 0)
