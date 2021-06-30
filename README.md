@@ -12,16 +12,16 @@ In the task you have to implement six "GetIndexOfChar" methods that should retur
 
 ## Complete the Task
 
-The implementation details are described with TODO comments in code files. There are fix "GetLastIndexOfChar" method that you can use as examples. Analyze these methods and run unit tests for them before starting implementing methods you have to implement.
+The implementation details are described in TODO comments in code files. There are six "GetLastIndexOfChar" methods that you can use as examples. Analyze these methods and run unit tests for them before you start to implement methods you have to implement.
 
 It's allowed to use [String.Length](https://docs.microsoft.com/en-us/dotnet/api/system.string.length) and [String.Chars](https://docs.microsoft.com/en-us/dotnet/api/system.string.chars) properties only for solving the task. You are not allowed to use other static or instance methods of the [String class](https://docs.microsoft.com/en-us/dotnet/api/system.string) or any extension method from [System.Linq namespace](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
 
-1. Analyze the implementation of the "GetLastIndexOfChar(string, char)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs) file. Implement "GetIndexOfChar(string, char)" static method. See TODO #1.
-1. Analyze the implementation of the "GetLastIndexOfChar(string, char, int, int)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs) file. Implement "GetIndexOfChar(string, char, int, int)" static method. See TODO #2.
-1. Analyze the implementation of the "GetLastIndexOfChar(string, char)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs) file. Implement "GetIndexOfChar(string, char)" static method. See TODO #3.
-1. Analyze the implementation of the "GetLastIndexOfChar(string, char, int, int)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs) file. Implement "GetIndexOfChar(string, char, int, int)" static method. See TODO #4.
-1. Analyze the implementation of the "GetLastIndexOfChar(string, char)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs) file. Implement "GetIndexOfChar(string, char)" static method. See TODO #5.
-1. Analyze the implementation of the "GetLastIndexofChar(string, char, int, int)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs) file. Implement "GetIndexOfChar(string, char, int, int) static method. See TODO #6.
+1. Analyze the implementation of the "GetLastIndexOfChar(string, char)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs) file. Implement the "GetIndexOfChar(string, char)" static method. See TODO #1.
+1. Analyze the implementation of the "GetLastIndexOfChar(string, char, int, int)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs) file. Implement the "GetIndexOfChar(string, char, int, int)" static method. See TODO #2.
+1. Analyze the implementation of the "GetLastIndexOfChar(string, char)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs) file. Implement the "GetIndexOfChar(string, char)" static method. See TODO #3.
+1. Analyze the implementation of the "GetLastIndexOfChar(string, char, int, int)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs) file. Implement the "GetIndexOfChar(string, char, int, int)" static method. See TODO #4.
+1. Analyze the implementation of the "GetLastIndexOfChar(string, char)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs) file. Implement the "GetIndexOfChar(string, char)" static method. See TODO #5.
+1. Analyze the implementation of the "GetLastIndexofChar(string, char, int, int)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs) file. Implement the "GetIndexOfChar(string, char, int, int) static method. See TODO #6.
 
 
 ## Fix Compiler Issues
@@ -34,11 +34,11 @@ If a compiler error or warning message is not clear, [review errors details](htt
 ## Save Your Work
 
 * [Rebuild your solution](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio) in Visual Studio.
-* Check out the [Error List window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/error-list-window) for compiler errors and warnings. If you have any of those issues, **fix issues** and rebuild the solution again.
+* Check out the [Error List window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/error-list-window) for compiler errors and warnings. If you have any of those issues, **fix the issues** and rebuild the solution again.
 * [Run all unit tests with Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer) and make sure there are **no failed unit tests**. Fix your code to [make all your unit tests GREEN](https://stackoverflow.com/questions/276813/what-is-red-green-testing).
 * Review all your changes **before** saving your work.
     * Open "Changes" view in [Team Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/reference/team-explorer-reference).
-    * Click with your right mouse button on a modified file.
+    * Right click on a modified file.
     * Click on "Compare with Unmodified" menu item to open a comparison window.
 * [Stage your changes](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits#stage-your-changes) and [create a commit](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits#create-a-commit).
 * Share your changes by [pushing them to remote repository](https://docs.microsoft.com/en-us/azure/devops/repos/git/pushing).
