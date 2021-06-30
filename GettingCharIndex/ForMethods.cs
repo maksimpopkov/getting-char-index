@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.ExceptionServices;
 
 namespace GettingCharIndex
 {
@@ -6,14 +7,61 @@ namespace GettingCharIndex
     {
         public static int GetIndexOfChar(string str, char value)
         {
-            // TODO #1. Analyze the implementation of "GetLastIndexOfChar(string, char)" method to see how "for" loop works, and implement the method using the "for" loop statement.
-            throw new NotImplementedException();
+            if (str is null)
+            {
+                throw new ArgumentNullException(nameof(str));
+            }
+
+            for (int currentCharIndex = 0; currentCharIndex < str.Length - 1; currentCharIndex++)
+            {
+                char currentChar = str[currentCharIndex];
+                if (currentChar == value)
+                {
+                    return currentCharIndex;
+                }
+            }
+
+            return -1;
         }
 
         public static int GetIndexOfChar(string str, char value, int startIndex, int count)
         {
-            // TODO #2. Analyze the implementation of "GetLastIndexOfChar(string, char, int, int)" method to see how "for" loop works, and implement the method using the "for" loop statement.
-            throw new NotImplementedException();
+            if (str is null)
+            {
+                throw new ArgumentNullException(nameof(str));
+            }
+
+            if (startIndex > str.Length)
+            {
+                throw new ArgumentOutOfRangeException(nameof(startIndex));
+            }
+
+            if (startIndex < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(startIndex));
+            }
+
+            if (count < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(count));
+            }
+
+            int lastPosition = startIndex + count;
+            if (lastPosition > str.Length)
+            {
+                throw new ArgumentOutOfRangeException(nameof(count));
+            }
+
+            for (int currentCharIndex = startIndex; currentCharIndex < lastPosition; currentCharIndex++)
+            {
+                char currentChar = str[currentCharIndex];
+                if (currentChar == value)
+                {
+                    return currentCharIndex;
+                }
+            }
+
+            return -1;
         }
 
         public static int GetLastIndexOfChar(string str, char value)
